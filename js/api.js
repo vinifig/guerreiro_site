@@ -43,20 +43,50 @@ var cliente = new (function(){
     })
   }
 
-})()
+})();
 
-var funcionario = {
+var funcionario = new (function(){
+  var urlFuncionario = urlBase + "funcionario";
+  var urlGerente = urlBase + "gerente";
+  this.getAll = function(callback){
+    performCall(urlFuncionario, "GET").done(callback)
+  }
+  this.getOne = function(data, callback){
+    performCall(urlFuncionario+"/"+data.cpf, "GET").done(function(data){
+      data = (data.length != 0) ? data[0] : false;
+      callback(data);
+    })
+  }
+  this.auth = function(urlFuncionario, callback){
+    performCall(urlCliente+"/auth", "POST", data).done(function(data){
+      callback(data);
+    })
+  }
+  this.addFuncionario = function(urlFuncionario, callback){
+    performCall(urlCliente, "POST", data).done(function(data){
+      callback(data);
+    })
+  }
+  this.addGerente = function(urlFuncionario, callback){
+    performCall(urlGerente, "POST", data).done(function(data){
+      callback(data);
+    })
+  }
+  this.remove = function(urlFuncionario, callback){
+    performCall(urlCliente, "DELETE", data).done(function(data){
+      callback(data);
+    })
+  }
+})();
 
-}
+var ingrediente = new (function(){
 
-var ingrediente = {
+})();
 
-}
+var cardapio = new (function(){
 
-var cardapio = {
+})();
 
-}
+var pedido = new (function(){
 
-var pedido = {
-
-}
+})();
