@@ -3,19 +3,74 @@
 
   include '../../header.php';
  ?>
- <div class="list card col-25">
-
-    <div class="item item-image">
-    <img src="http://localhost/guerreiro_site/img/hamburger.png">
-  </div>
-
-	<div class="item">
-	    <h2>Pretty Hate Machine</h2>
-	    <p>Nine Inch Nails</p>
-	  </div>
-	<button class="button button-positive"></button>
-
-</div>
-<?php
+	<ul class="products">
+	    <li>
+				<div class="card">
+					<div   class="item item-image">
+						<img src="http://localhost/guerreiro_site/img/hamburger.png">
+					</div>
+					<div class="item">
+						<h2>Hamburger</h2>
+						<p>Delicioso sanduíche.</p>
+					</div>
+				</div>
+	    </li>
+			<li>
+				<div class="card">
+					<div   class="item item-image">
+						<img src="http://localhost/guerreiro_site/img/hamburger.png">
+					</div>
+					<div class="item">
+						<h2>Hamburger</h2>
+						<p>Delicioso sanduíche.</p>
+					</div>
+				</div>
+	    </li>
+			<li>
+				<div class="card">
+					<div   class="item item-image">
+						<img src="http://localhost/guerreiro_site/img/hamburger.png">
+					</div>
+					<div class="item">
+						<h2>Hamburger</h2>
+						<p>Delicioso sanduíche.</p>
+					</div>
+				</div>
+	    </li>
+			<li>
+				<div class="card">
+					<div   class="item item-image">
+						<img src="http://localhost/guerreiro_site/img/hamburger.png">
+					</div>
+					<div class="item">
+						<h2>Hamburger</h2>
+						<p>Delicioso sanduíche.</p>
+					</div>
+				</div>
+	    </li>
+			<li>
+				<div class="card">
+					<div   class="item item-image">
+						<img src="http://localhost/guerreiro_site/img/hamburger.png">
+					</div>
+					<div class="item">
+						<h2>Hamburger</h2>
+						<p>Delicioso sanduíche.</p>
+					</div>
+				</div>
+	    </li>
+			<li>
+				<div class="card">
+					<div   class="item item-image">
+						<img src="http://localhost/guerreiro_site/img/hamburger.png">
+					</div>
+					<div class="item">
+						<h2>Hamburger</h2>
+						<p>Delicioso sanduíche.</p>
+					</div>
+				</div>
+	    </li>
+	</ul>
+  <?php
   include '../../footer.php';
 ?>
