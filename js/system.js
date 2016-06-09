@@ -1,6 +1,6 @@
 Array.prototype.containsInArray = function(value){
   for(var i = 0; i < this.length; i++){
-    if(this[i].indexOf(value) != -1)
+    if(this[i] != undefined && value.indexOf(this[i]) != -1)
       return i;
   }
   return -1;
