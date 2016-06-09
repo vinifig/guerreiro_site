@@ -36,3 +36,13 @@
 	background-color: #f1f1f1;
 	box-shadow: inset 0 3px 3px rgba(0,0,0,0.3);
 }
+
+/*#loginRadioChoice input{
+    left: 123px;
+    top: 144px;
+    height: 16px;
+}*/
+
+#loginRadioChoice{
+    display: inline-block;
+}
