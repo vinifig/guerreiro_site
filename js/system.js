@@ -1,3 +1,12 @@
+Array.prototype.containsInArray = function(value){
+  for(var i = 0; i < this.length; i++){
+    if(this[i] != undefined && value.indexOf(this[i]) != -1)
+      return i;
+  }
+  return -1;
+}
+
+// Cache
 var saveCache = function(name, value){
   window.localStorage.setItem(name,JSON.stringify(value));
   return value;
@@ -12,14 +21,7 @@ var clearCache = function(){
   return true;
 }
 
-var performLogin = function(){
-  saveCache('current_user', {"num_celular":"none","nome_cliente":"Pedido fisico","senha":"","email":"","status_cliente":2})
-}
-
-var logout = function(){
-  clearCache();
-}
-
+// USERS
 var getUser = function(){
   var user = JSON.parse(loadCache('current_user'));
   return user != null ? user : false;
@@ -28,3 +30,74 @@ var getUser = function(){
 var verifyLogin = function(){
   return (getUser() != false);
 }
+
+// Permissions
+var checkUserLevel = function(){
+  var user = getUser();
+  var level = "unauth";
+  if(user.num_celular != undefined)
+    level = "cliente";
+  else if(user.cpf_funcionario != undefined)
+    level = user.nivel_funcionario == 1 ? "funcionario" : "gerente";
+
+  return level;
+}
+
+
+// Auth [pages, users]
+var performLogin = function(){
+  saveCache('current_user', {"num_celular":"none","nome_cliente":"Pedido fisico","senha":"","email":"","status_cliente":2})
+}
+
+var logout = function(){
+  clearCache();
+}
+
+var authPages = ['login.php', 'cadastroCliente.php'];
+// PARA DEV:
+authPages.push(".php");
+
+var userLevelAuthPages = {
+  'cliente' : ['modulos/cliente'],
+  'funcionario' : ['modulos/funcionario'],
+  'gerente' : ['modulos/gerencia']
+}
+
+var userLevelRootPages = {
+  'cliente' : app_path+"modulos/cliente/index.php",
+  'funcionario' : app_path+"modulos/funcionario/index.php",
+  'funcionario' : app_path+"modulos/gerencia/index.php",
+  'unauth' : app_path+"login.php"
+}
+
+
+var is_unauth_page = function(user_level){
+  var current_page = location.href.split(app_path)[1];
+  var userAuthPages = authPages.concat(userLevelAuthPages[user_level]);
+  return (userAuthPages.containsInArray(current_page) == -1)
+}
+
+var is_auth_page = function(user_level){
+  return !(is_unauth_page(user_level));
+}
+
+var checkPermissions = function(){
+  if(!verifyLogin() && is_unauth_page(checkUserLevel())){
+    return false;
+  }
+  return true;
+}
+
+var redirectToRootPage = function(){
+  location.href= userLevelRootPages[checkUserLevel()]
+}
+
+var performVerification = function(){
+  var current_page = location.href.split(app_path)[1];
+  if(getUser() != false && current_page.indexOf('login.php') != -1)
+    return redirectToRootPage();
+  if(!checkPermissions())
+    return redirectToRootPage();
+};
+
+performVerification();

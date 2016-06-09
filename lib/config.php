@@ -15,5 +15,6 @@
 
 
   $url_server = @$_SERVER['SERVER_NAME'].":".@$_SERVER['SERVER_PORT'].'/'.getSitePath();
+  $url_wo_port_server = @$_SERVER['SERVER_NAME'].'/'.getSitePath();
 
 ?>

@@ -52,6 +52,11 @@
 }
 
 ul.products li {
-    width: 400px;
-    display: inline-block;
+    /*width: 400px;*/
+    /*display: inline-block;*/
+}
+
+.scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
 }

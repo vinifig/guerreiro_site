@@ -14,6 +14,9 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    <script language="javascript">
+      var app_path = "//<?php echo $url_wo_port_server; ?>";
+    </script>
     <script src="//<?php echo $url_server; ?>js/jquery.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/api.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/system.js" charset="utf-8"></script>
@@ -23,7 +26,7 @@
     <div class="bar bar-header bar-light">
       <h1 class="title"><?php echo $title_page; ?></h1>
     </div>
-    <div class="appcontainer">
+    <div class="appcontainer scroll">
       <?php if(count(@$menu_items)) :?>
       <nav class="sidemenu">
         <ul class="list">
