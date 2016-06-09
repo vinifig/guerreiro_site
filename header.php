@@ -5,14 +5,16 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
-    <link href="css/ionic.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="//localhost/guerreiro_site/css/ionic.min.css" rel="stylesheet">
+    <link href="//localhost/guerreiro_site/css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-    <script src="js/jquery.js" charset="utf-8"></script>
-    <script src="js/main.js" charset="utf-8"></script>
+    <script src="//localhost/guerreiro_site/js/jquery.js" charset="utf-8"></script>
+    <script src="//localhost/guerreiro_site/js/api.js" charset="utf-8"></script>
+    <script src="//localhost/guerreiro_site/js/system.js" charset="utf-8"></script>
+    <script src="//localhost/guerreiro_site/js/main.js" charset="utf-8"></script>
   </head>
   <body >
     <div class="bar bar-header bar-light">
