@@ -51,12 +51,14 @@
 	width: 100%;
 }
 
-ul.products li {
-    /*width: 400px;*/
-    /*display: inline-block;*/
-}
-
 .scroll{
 	overflow-y: auto;
 	overflow-x: hidden;
+}
+
+#contadorProd{
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
 }

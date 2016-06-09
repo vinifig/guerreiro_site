@@ -13,6 +13,7 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
      </div>
    </div>
@@ -24,6 +25,7 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
      </div>
    </div>
@@ -35,9 +37,11 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
-     </div>
-   </div>
+			 
+		 	 </div>
+		  </div>
    <div class="col col-25">
      <div class="card">
        <div   class="item item-image">
@@ -46,6 +50,7 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
      </div>
    </div>
@@ -59,6 +64,7 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
      </div>
    </div>
@@ -70,6 +76,7 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
      </div>
    </div>
@@ -81,9 +88,10 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
-       </div>
-     </div>
-   </div>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
+     	</div>
+  	</div>
+	</div>
    <div class="col col-25">
      <div class="card">
        <div   class="item item-image">
@@ -92,6 +100,7 @@
        <div class="item">
          <h2>Hamburger</h2>
          <p>Delicioso sanduíche.</p>
+         <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
      </div>
    </div>
