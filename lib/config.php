@@ -5,7 +5,8 @@
     $serverPath = str_replace("\\", "/", $_SERVER['DOCUMENT_ROOT']);
     $explodedServer = explode("/", $serverPath);
     $finalPath = "";
-    for($i = count($explodedServer) - 1; $i < count($explodedFile) - 2; $i++){
+    $startIndex = $explodedServer[count($explodedServer) - 1] == "" ? count($explodedServer) - 1 : count($explodedServer);
+    for($i = $startIndex; $i < count($explodedFile) - 2; $i++){
       $finalPath .= $explodedFile[$i] . '/';
     }
     return $finalPath;
