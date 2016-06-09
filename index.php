@@ -1,8 +1,12 @@
 <?php
   $title_page = "Index";
+  // $menu_items = [
+  //   ["nome" => "oi", "url" => "#1"],
+  //   ["nome" => "cueio", "url" => "#2"],
+  // ];
   include 'header.php';
  ?>
-    
+
 <?php
   include 'footer.php';
 ?>
