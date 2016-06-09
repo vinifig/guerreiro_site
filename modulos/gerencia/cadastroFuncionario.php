@@ -4,7 +4,7 @@
   //   ["nome" => "oi", "url" => "#1"],
   //   ["nome" => "cueio", "url" => "#2"],
   // ];
-  include 'header.php';
+  include '../../header.php';
  ?>
  	  <div id="inputFields" class="list">
 			<label class="item">
@@ -23,5 +23,5 @@
 		<button class="button button-positive">Cadastrar</button>
 
 <?php
-  include 'footer.php';
+  include '../../footer.php';
 ?>
