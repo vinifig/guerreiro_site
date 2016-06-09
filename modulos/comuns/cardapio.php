@@ -6,7 +6,7 @@
  <div class="list card col-25">
 
     <div class="item item-image">
-    <img src="http://localhost/guerreiro_site/img/hamburger.png">
+    <img src="//<?php echo $url_server; ?>img/hamburger.png">
   </div>
 
 	<div class="item">

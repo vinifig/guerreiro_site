@@ -1,20 +1,23 @@
+<?php
+  include 'lib/config.php';
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title><?php echo $title_page;?></title>
 
-    <link href="//localhost/guerreiro_site/css/ionic.min.css" rel="stylesheet">
-    <link href="//localhost/guerreiro_site/css/style.css" rel="stylesheet">
+    <link href="//<?php echo $url_server; ?>css/ionic.min.css" rel="stylesheet">
+    <link href="//<?php echo $url_server; ?>css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-    <script src="//localhost/guerreiro_site/js/jquery.js" charset="utf-8"></script>
-    <script src="//localhost/guerreiro_site/js/api.js" charset="utf-8"></script>
-    <script src="//localhost/guerreiro_site/js/system.js" charset="utf-8"></script>
-    <script src="//localhost/guerreiro_site/js/main.js" charset="utf-8"></script>
+    <script src="//<?php echo $url_server; ?>js/jquery.js" charset="utf-8"></script>
+    <script src="//<?php echo $url_server; ?>js/api.js" charset="utf-8"></script>
+    <script src="//<?php echo $url_server; ?>js/system.js" charset="utf-8"></script>
+    <script src="//<?php echo $url_server; ?>js/main.js" charset="utf-8"></script>
   </head>
   <body >
     <div class="bar bar-header bar-light">
