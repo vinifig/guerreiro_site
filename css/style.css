@@ -46,3 +46,7 @@
 #loginRadioChoice{
     display: inline-block;
 }
+
+#inputFields input{
+	width: 100%;
+}
