@@ -58,12 +58,12 @@ var funcionario = new (function(){
     })
   }
   this.auth = function(urlFuncionario, callback){
-    performCall(urlCliente+"/auth", "POST", data).done(function(data){
+    performCall(urlFuncionario+"/auth", "POST", data).done(function(data){
       callback(data);
     })
   }
   this.addFuncionario = function(urlFuncionario, callback){
-    performCall(urlCliente, "POST", data).done(function(data){
+    performCall(urlFuncionario, "POST", data).done(function(data){
       callback(data);
     })
   }
@@ -73,7 +73,7 @@ var funcionario = new (function(){
     })
   }
   this.remove = function(urlFuncionario, callback){
-    performCall(urlCliente, "DELETE", data).done(function(data){
+    performCall(urlFuncionario, "DELETE", data).done(function(data){
       callback(data);
     })
   }
