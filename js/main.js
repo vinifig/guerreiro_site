@@ -33,6 +33,13 @@ var loginSubmitCallback = function(e){
   e.preventDefault();
 }
 
+var sairCallback = function(e){
+  logout();
+  redirectToRootPage();
+  e.preventDefault();
+}
+
 $(document).ready(function() {
   $("#loginForm").on("submit", loginSubmitCallback)
+  $("#sair").on("click", sairCallback);
 });

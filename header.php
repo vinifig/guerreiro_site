@@ -30,7 +30,7 @@
     <nav class="sidemenu">
       <ul class="list">
         <?php foreach($menu_items as $menu_item)
-        echo '<a href="'.$menu_item['url'].'"><li class="item">'.$menu_item['nome'].'</li></a>';
+        echo '<a class="'.$menu_item['nome'].'_bt" href="'.$menu_item['url'].'"><li class="item">'.$menu_item['nome'].'</li></a>';
         ?>
       </ul>
     </nav>
