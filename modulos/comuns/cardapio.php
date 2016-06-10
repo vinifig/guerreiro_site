@@ -16,9 +16,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -33,9 +33,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -50,9 +50,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -67,9 +67,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -86,9 +86,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -103,9 +103,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -120,9 +120,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
@@ -137,9 +137,9 @@
          <p>Ovo, Tomate, Cebola, Hamburger</p>
        </div>
        <div class="item item-qtd-buttons">
-         <button class="button-left button icon ion-minus"></button>
+         <button class="button-left button icon ion-minus button-dark"></button>
          <input type="text" value="0">
-         <button class="button-right button icon ion-plus"></button>
+         <button class="button-right button icon ion-plus button-dark"></button>
        </div>
      </div>
    </div>
