@@ -26,13 +26,16 @@
     <div class="bar bar-header bar-light">
       <h1 class="title"><?php echo $title_page; ?></h1>
     </div>
+    <?php if(count(@$menu_items)) :?>
+    <nav class="sidemenu">
+      <ul class="list">
+        <?php foreach($menu_items as $menu_item)
+        echo '<a href="'.$menu_item['url'].'"><li class="item">'.$menu_item['nome'].'</li></a>';
+        ?>
+      </ul>
+    </nav>
+    <div class="appcontainer scroll withmenu">
+    <?php else: ?>
     <div class="appcontainer scroll">
-      <?php if(count(@$menu_items)) :?>
-      <nav class="sidemenu">
-        <ul class="list">
-            <?php foreach($menu_items as $menu_item)
-              echo '<a href="'.$menu_item['url'].'"><li class="item">'.$menu_item['nome'].'</li></a>';
-            ?>
-        </ul>
-      </nav>
-      <?php endif; ?>
+
+    <?php endif; ?>
