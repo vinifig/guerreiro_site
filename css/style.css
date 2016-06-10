@@ -70,3 +70,33 @@
     border: 1px dotted #ccc;
     margin: 2%;
 }
+
+.item-qtd-buttons{
+	padding: 0;
+}
+
+.item-qtd-buttons button{
+	width:25%;
+	margin: 0;
+	padding: 0;
+}
+
+.item-qtd-buttons button.button-left{
+	float:left;
+}
+
+.item-qtd-buttons button.button-right{
+	float:right;
+}
+
+.item-qtd-buttons input{
+	width:50%;
+	display: inline-block;
+	float:none;
+	font-size: 24px;
+	line-height: 40px;
+	height: 100%;
+	margin-top: 2px;
+	padding: 4px 0;
+	text-align:center;
+}
