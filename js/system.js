@@ -45,8 +45,9 @@ var checkUserLevel = function(){
 
 
 // Auth [pages, users]
-var performLogin = function(){
-  saveCache('current_user', {"num_celular":"none","nome_cliente":"Pedido fisico","senha":"","email":"","status_cliente":2})
+var performLogin = function(user_data){
+  saveCache('current_user', user_data);
+  return redirectToRootPage();
 }
 
 var logout = function(){
@@ -66,7 +67,7 @@ var userLevelAuthPages = {
 var userLevelRootPages = {
   'cliente' : app_path+"modulos/cliente/index.php",
   'funcionario' : app_path+"modulos/funcionario/index.php",
-  'funcionario' : app_path+"modulos/gerencia/index.php",
+  'gerente' : app_path+"modulos/gerencia/index.php",
   'unauth' : app_path+"login.php"
 }
 

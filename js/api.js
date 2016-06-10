@@ -53,7 +53,6 @@ var funcionario = new (function(){
   }
   this.getOne = function(data, callback){
     performCall(urlFuncionario+"/"+data.cpf, "GET").done(function(data){
-      data = (data.length != 0) ? data[0] : false;
       callback(data);
     })
   }

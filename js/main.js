@@ -10,17 +10,23 @@ var loginSubmitCallback = function(e){
   var loginInfo = $(this).serializeArray();
 
   var loginCallback = function(data){
-    console.log(data)
+    if(data.result != undefined && data.result == true){
+      if(loginInfo[0].value == "cliente"){
+        cliente.getOne({celular : loginInfo[1].value},performLogin)
+      }else {
+        funcionario.getOne({cpf : loginInfo[1].value},performLogin)
+      }
+    }
   }
 
   if(loginInfo[0].value == "cliente"){
     cliente.auth({
-      num_celular : loginInfo[1].value,
+      celular : loginInfo[1].value,
       senha : loginInfo[2].value
     }, loginCallback)
   }else{
     funcionario.auth({
-      cpf_funcionario : loginInfo[1].value,
+      cpf : loginInfo[1].value,
       senha : loginInfo[2].value
     }, loginCallback)
   }
