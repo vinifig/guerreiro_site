@@ -1,4 +1,3 @@
-var glob;
 var Cardapio = new (function(){
   this.itemTemplate = `<div class="col col-25">
     <div class="card">
@@ -100,9 +99,12 @@ var Cardapio = new (function(){
   }
 
   this.inflate = function(callback){
+    console.log("teste");
     cardapio.getAll(function(itemsMenu){
+      console.log("teste");
       pedido.getOne(Cardapio.codigo_pedido, function(pedido){
-        var itemsPedido = pedido.itemsMenu;
+
+        var itemsPedido = pedido.itemsMenu || [];
         for(var i = 0; i < itemsMenu.length; i++){
           itemsMenu[i].quantidade = 0;
           for(var j = 0; j < itemsPedido.length; j++)
@@ -121,11 +123,13 @@ var Cardapio = new (function(){
 })()
 
 $(document).ready(function() {
-  Cardapio.preparaPedido(function(){
-    Cardapio.inflate(function(){
-      $(".button-left.ion-minus").on("click", Cardapio.diminuiItem)
-      $(".button-right.ion-plus").on("click", Cardapio.aumentaItem)
-      $(".qtdItem").on("change", Cardapio.updateItem)
+  if(document.querySelector(".cardapioContainer")){
+    Cardapio.preparaPedido(function(){
+      Cardapio.inflate(function(){
+        $(".button-left.ion-minus").on("click", Cardapio.diminuiItem)
+        $(".button-right.ion-plus").on("click", Cardapio.aumentaItem)
+        $(".qtdItem").on("change", Cardapio.updateItem)
+      });
     });
-  });
+  }
 });

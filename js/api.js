@@ -157,6 +157,7 @@ var pedido = new (function(){
     })
   }
   this.getOne = function(codigo, callback){
+    console.log(urlPedido+"/"+codigo);
     performCall(urlPedido+"/"+codigo, "GET").done(callback)
   }
   this.createPedido = function(num_celular, cpf_funcionario, callback){

@@ -1,7 +1,7 @@
 // DEFAULT FUNCTIONS
 var changeTitleBar = function(title){
   if(title)
-  $("#title_bar").text(title);
+    $("h1.title").text(title);
 }
 
 // LOGIN
@@ -41,6 +41,17 @@ var sairCallback = function(e){
 
 var gotoSacola = function(){
   location.href="sacola.php";
+}
+
+var formatTime = function(date){
+  console.log(date);
+  var data = date.toString().split(" ");
+  return data[4];
+}
+
+var formatDate = function(date){
+  var data = date.toString().split(" ");
+  return data[2]+"/"+date.getMonth()+"/"+data[3];
 }
 
 $(document).ready(function() {

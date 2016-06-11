@@ -1,9 +1,9 @@
 <?php
-  $title_page = "Pedido #123";
+  $title_page = "Pedido #";
 
   include '../../header.php';
  ?>
-
+  <div class="pedidoContainer">
 		<div class="card list">
 			<div class="item">
 				<p>Hamburger Delícia Quantidade: 45 unid.</p>
@@ -17,7 +17,7 @@
 				<p>Hamburger Delícia Quantidade: 45 unid.</p>
 			</div>
 		</div>
-		<div class="card list">
+		<!-- <div class="card list">
 			<div class="item">
 				<h2>Data de Entrega</h2>
 				29/10/16
@@ -46,7 +46,8 @@
 				<h2>Anotações</h2>
 				Sem queijo, sem lanche, sem nada, não quero.
 			</div>
-		</div>
+		</div> -->
+  </div>
 	<?php
   include '../../footer.php';
 ?>

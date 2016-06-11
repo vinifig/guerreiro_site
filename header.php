@@ -16,12 +16,20 @@
     -->
     <script language="javascript">
       var app_path = "//<?php echo $url_wo_port_server; ?>";
+      var get_vars = {};
+      <?php
+        $x = array_keys($_GET);
+        foreach($x as $y){
+          echo "get_vars.$y = '".$_GET[$y]."';\n";
+        }
+      ?>
     </script>
     <script src="//<?php echo $url_server; ?>js/jquery.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/api.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/system.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/main.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/cardapio.js" charset="utf-8"></script>
+    <script src="//<?php echo $url_server; ?>js/pedidos.js" charset="utf-8"></script>
   </head>
   <body >
 
