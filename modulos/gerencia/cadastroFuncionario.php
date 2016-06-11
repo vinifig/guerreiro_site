@@ -6,7 +6,7 @@
   // ];
   include '../../header.php';
  ?>
- 	  <div id="inputFields" class="list">
+ 	  <div class="list">
 			<label class="item">
 				Nome
 				<input type="text" placeholder="Joao Ferreira Silva">
