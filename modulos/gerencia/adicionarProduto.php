@@ -19,22 +19,12 @@
  				</label>
 				<label class="item">
 					Ingredientes
-					<p>
-						Ovo
-						<button class="button icon  ion-close-round"></button>
+					<p>Tomate QTDE:
+						<input type="text"></input>
 					</p>
-					<p>
-						Tomate
-						<button class="button icon  ion-close-round"></button>
+					<p>Tomate QTDE:
+						<input type="text"></input>
 					</p>
-					<div class="item-input-inset">
-				   <label class="item-input-wrapper">
-				     <i class="icon ion-ios-search placeholder-icon"></i>
-				     <input type="search" placeholder="Pesquisar Ingrediente">
-				   </label>
-				   <button class="button">
-				     Cancel
-				   </button>
 				 	</div>
 				</label>
 		 </div>
