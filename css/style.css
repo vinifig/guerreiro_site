@@ -55,7 +55,7 @@
     display: inline-block;
 }
 
-#inputFields input{
+input[type="text"]{
 	width: 100%;
 }
 
@@ -102,6 +102,26 @@
 	text-align:center;
 }
 
+
+
+.btn-item button{
+	width:2%;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+		float:left;
+}
+
+.btn-item input{
+	width: 5%;
+	float:left;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 40px;
+	height: 100%;
+	margin-top: 2px;
+	padding: 4px 0;
+	text-align:center;
 
 .link_list_menu{
 	text-decoration: none;
