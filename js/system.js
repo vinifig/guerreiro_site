@@ -65,7 +65,7 @@ var userLevelAuthPages = {
 }
 
 var userLevelRootPages = {
-  'cliente' : app_path+"modulos/cliente/index.php",
+  'cliente' : app_path+"modulos/cliente/cardapio.php",
   'funcionario' : app_path+"modulos/funcionario/index.php",
   'gerente' : app_path+"modulos/gerencia/index.php",
   'unauth' : app_path+"login.php"

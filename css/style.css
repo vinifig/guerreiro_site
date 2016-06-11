@@ -103,6 +103,7 @@ input[type="text"]{
 }
 
 
+
 .btn-item button{
 	width:2%;
 	margin: 0;
@@ -121,4 +122,15 @@ input[type="text"]{
 	margin-top: 2px;
 	padding: 4px 0;
 	text-align:center;
+
+.link_list_menu{
+	text-decoration: none;
+}
+
+.link_list_menu .item{
+	transition: 0.5s;
+}
+
+.link_list_menu .item:hover{
+	background-color: #f5f5f5;
 }

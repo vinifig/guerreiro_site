@@ -144,14 +144,23 @@ var pedido = new (function(){
   this.getAll = function(callback){
     performCall(urlPedido, "GET").done(callback)
   }
-  this.getOne = function(data, callback){
-    performCall(urlPedido+"/"+data.codigo, "GET").done(function(data){
-      data = (data.length != 0) ? data[0] : false;
-      callback(data);
+  this.getAllSimple = function(callback){
+    performCall(urlPedido+"_simple", "GET").done(callback)
+  }
+  this.getByUser = function(cod_user, callback){
+    this.getAllSimple(function(data){
+      var userPedidos = []
+      for(var i = 0; i < data.length; i++)
+        if(data[i].cliente_fk == cod_user)
+          userPedidos.push(data[i]);
+      callback(userPedidos);
     })
   }
-  this.createPedido = function(data, callback){
-    performCall(urlPedido, "POST", data).done(function(data){
+  this.getOne = function(codigo, callback){
+    performCall(urlPedido+"/"+codigo, "GET").done(callback)
+  }
+  this.createPedido = function(num_celular, cpf_funcionario, callback){
+    performCall(urlPedido, "POST", {cliente: num_celular, funcionario: cpf_funcionario}).done(function(data){
       callback(data);
     })
   }

@@ -41,5 +41,5 @@ var sairCallback = function(e){
 
 $(document).ready(function() {
   $("#loginForm").on("submit", loginSubmitCallback)
-  $("#sair").on("click", sairCallback);
+  $(".Sair_bt").on("click", sairCallback);
 });
