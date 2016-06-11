@@ -1,9 +1,6 @@
 <?php
   $title_page = "Funcionários";
-  // $menu_items = [
-  //   ["nome" => "oi", "url" => "#1"],
-  //   ["nome" => "cueio", "url" => "#2"],
-  // ];
+
   include '../../header.php';
  ?>
  	  <div id="listaFuncionario" class="list">
