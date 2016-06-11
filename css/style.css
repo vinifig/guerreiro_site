@@ -133,3 +133,7 @@ input[type="text"]{
 .link_list_menu .item:hover{
 	background-color: #f5f5f5;
 }
+
+#listaFuncionario .item-avatar{
+	display:inline-block;
+}
