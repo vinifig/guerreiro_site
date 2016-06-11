@@ -25,7 +25,6 @@
 					<p>Tomate QTDE:
 						<input type="text"></input>
 					</p>
-				 	</div>
 				</label>
 		 </div>
 		 <button class="button button-positive">Salvar</button>
