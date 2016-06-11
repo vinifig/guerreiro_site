@@ -39,7 +39,12 @@ var sairCallback = function(e){
   e.preventDefault();
 }
 
+var gotoSacola = function(){
+  location.href="sacola.php";
+}
+
 $(document).ready(function() {
   $("#loginForm").on("submit", loginSubmitCallback)
   $(".Sair_bt").on("click", sairCallback);
+  $(".sacola_bt").on("click", gotoSacola);
 });
