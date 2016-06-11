@@ -102,8 +102,6 @@ input[type="text"]{
 	text-align:center;
 }
 
-
-
 .btn-item button{
 	width:2%;
 	margin: 0;
@@ -122,6 +120,7 @@ input[type="text"]{
 	margin-top: 2px;
 	padding: 4px 0;
 	text-align:center;
+}
 
 .link_list_menu{
 	text-decoration: none;
