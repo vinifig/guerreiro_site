@@ -30,6 +30,7 @@
     <script src="//<?php echo $url_server; ?>js/main.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/cardapio.js" charset="utf-8"></script>
     <script src="//<?php echo $url_server; ?>js/pedidos.js" charset="utf-8"></script>
+    <script src="//<?php echo $url_server; ?>js/Sacola.js" charset="utf-8"></script>
   </head>
   <body >
 

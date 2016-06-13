@@ -1,3 +1,6 @@
+a{
+	text-decoration: none;
+}
 .appcontainer{
 	position: absolute;
 	top: 44px;
@@ -52,6 +55,7 @@ input[type="text"]{
 
 .item-qtd-buttons{
 	padding: 0;
+	max-width: 300px;
 }
 
 .item-qtd-buttons button{
@@ -66,13 +70,14 @@ input[type="text"]{
 }
 
 .item-qtd-buttons button.button-right{
-	float:right;
+	float:left;
 }
 
 .item-qtd-buttons input{
+	min-width: 50px;
 	width:50%;
 	display: inline-block;
-	float:none;
+	float:left;
 	font-size: 24px;
 	line-height: 40px;
 	height: 100%;
@@ -115,4 +120,8 @@ input[type="text"]{
 
 #listaFuncionario .item-avatar{
 	display:inline-block;
+}
+
+.invisible {
+	display:none;
 }

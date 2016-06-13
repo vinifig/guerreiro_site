@@ -3,58 +3,39 @@
 
   include '../../header.php';
  ?>
-		 <div class="card list">
-			 <div class="item item-thumbnail-left">
-				 <img src="//<?php echo $url_server; ?>img/hamburger.png">
-				 <h2>Hamburger</h2>
-				 <div class="btn-item">
-					 <button class="button-left button icon ion-minus button-dark"></button>
-					 <input type="text" value="0">
-					 <button class="button-right button icon ion-plus button-dark"></button>
-				 </div>
-			 </div><div class="item item-thumbnail-left">
-				 <img src="//<?php echo $url_server; ?>img/hamburger.png">
-				 <h2>Hamburger</h2>
-				 <div class="btn-item">
-					 <button class="button-left button icon ion-minus button-dark"></button>
-					 <input type="text" value="0">
-					 <button class="button-right button icon ion-plus button-dark"></button>
-				 </div>
-			 </div><div class="item item-thumbnail-left">
-				 <img src="//<?php echo $url_server; ?>img/hamburger.png">
-				 <h2>Hamburger</h2>
-				 <div class="btn-item">
-					 <button class="button-left button icon ion-minus button-dark"></button>
-					 <input type="text" value="0">
-					 <button class="button-right button icon ion-plus button-dark"></button>
-				 </div>
-			 </div>
-		 </div>
+    <form class="sacolaContainer">
+		 <div class="card list itemsContainer">
+
+     </div>
 
 		 <div class="card list">
 			 <div class="item">
 				 <h2>Data de Entrega</h2>
-				 <input type="date"></input>
+				 <input name="dentrega" type="date"></input>
 			 </div>
 			 <div class="item">
 				 <h2>Hora de Entrega</h2>
-				 <input type="time"></input>
+				 <input name="hentrega" type="time"></input>
 			 </div>
-			 <div class="item">
-				 <h2>Cliente</h2>
-				 <input type="text" placeholder="nome do cliente"></input>
-			 </div>
-			 <div class="item">
+			 <div class="item preco">
 				 <h2>Preço</h2>
-				 R$ 69,60
+				 <span class="dataToModify"></span>
 			 </div>
 			 <div class="item">
 				 <h2>Anotações</h2>
-				 <input type="text" placeholder="suas observações aqui"></input>
-				 <in
+				 <input type="text" name="notes" placeholder="Suas observações aqui. Caso seja funcionario, o nome do cliente vem aqui"></input>
+			 </div>
+       <div class="item">
+				 <h2>Forma Pagamento</h2>
+				 <select name="pagamento">
+         <option value="1">Debito</option>
+         <option value="2">Dinheiro</option>
+         <option value="3">Crédito</option>
+         </select>
 			 </div>
 		 	</div>
-			<button class="button button-positive">Finalizar Pedido</button>
+			<input type="submit" class="button button-positive" value="Finalizar Pedido">
+    </form>
 
   <?php
 

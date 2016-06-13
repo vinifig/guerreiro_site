@@ -19,6 +19,10 @@ var Cardapio = new (function(){
   </div>`;
   this.codigo_pedido = -1;
   // preparacaoDePedido
+
+  this.set_codigo_pedido = function(cod){
+    this.codigo_pedido = cod;
+  }
   this.getPedido = function(callback){
     pedido.getByUser(getUser().num_celular,function(data){
       for(var i = 0; i < data.length; i++){
