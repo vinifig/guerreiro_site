@@ -1,7 +1,7 @@
 // DEFAULT FUNCTIONS
 var changeTitleBar = function(title){
   if(title)
-    $("h1.title").text(title);
+    $("h1.title, title").text(title);
 }
 
 // LOGIN
