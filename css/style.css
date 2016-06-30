@@ -65,11 +65,11 @@ input[type="text"]{
 	border-radius: 0;
 }
 
-.item-qtd-buttons button.button-left{
+.item-qtd-buttons .button-left{
 	float:left;
 }
 
-.item-qtd-buttons button.button-right{
+.item-qtd-buttons .button-right{
 	float:left;
 }
 
@@ -86,7 +86,7 @@ input[type="text"]{
 	text-align:center;
 }
 
-.btn-item button{
+.btn-item button, .btn-item a{
 	width:2%;
 	margin: 0;
 	padding: 0;

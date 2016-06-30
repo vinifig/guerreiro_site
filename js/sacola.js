@@ -3,10 +3,10 @@ var Sacola = new (function(){
     <img src="${app_path}img/hamburger.png">
     <h2><<titulo>></h2>
     <div class="btn-item item-qtd-buttons">
-      <button class="button-left button icon ion-minus button-dark"></button>
+      <a href="#" class="button-left button icon ion-minus button-dark"></a>
       <input type="text" class="qtdItem" value="<<qtd>>">
       <input type="hidden" class="codItem" value="<<item>>">
-      <button class="button-right button icon ion-plus button-dark"></button>
+      <a href="#" class="button-right button icon ion-plus button-dark"></a>
     </div>
   </div>`;
   this.sacolaVaziaTemplate = `<div class="item">
